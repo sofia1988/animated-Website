@@ -1,0 +1,66 @@
+@media (max-width:991px) {
+    section {
+        padding: 150px 20px;
+    }
+    header {
+        padding: 20px;
+    }
+    .navigation {
+        display: none;
+    }
+    .navigation.active {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    header ul li {
+        margin: 10px 0;
+    }
+    header ul li a {
+        margin-left:0 ;
+        font-size: 1.5em;
+    }
+    .toggle {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        background: #0169b2 url(./img/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        z-index: 1000;
+        border-radius: 2px;
+    }
+    .toggle.active {
+        background: #0169b2 url(./img/close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .mosque {
+        max-width: 600px;
+    }
+    .content .textbox H2 {
+        font-size: 2.5em;
+    }
+    .content .textbox p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width:600px) {
+    .mosque {
+        max-width: 400px;
+        opacity: 0.4 !important; 
+    }
+}
